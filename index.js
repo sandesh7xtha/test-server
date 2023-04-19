@@ -38,10 +38,9 @@ const server = app.listen(process.env.PORT, () => {
 const io = socket(server, {
   cors: {
     // origin: "http://localhost:3000",
-    origin: "https://conversation-ea834.web.app",
+    origin: "https://conversation-kuraakani.web.app",
     credentials: true,
   },
-  transports: ["websocket"],
 });
 
 // const io = socket("https://21ae-27-34-17-227.ngrok-free.app", {
